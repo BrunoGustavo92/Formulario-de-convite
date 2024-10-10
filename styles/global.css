@@ -9,14 +9,14 @@
   --font-family-title: 'Baloo 2', sans-serif;
   --font-family-text: 'Open Sans', sans-serif;
 
-  --text-logo: 400 2.5rem/1.4 var(--font-family-logo);
+  --text-logo: 400 2.5rem var(--font-family-logo);
 
-  --text-title-md: 700 1.75rem/1.4 var(--font-family-title);
-  --text-title-sm: 700 1.12rem/1.4 var(--font-family-title);
+  --text-title-md: 700 1.75rem var(--font-family-title);
+  --text-title-sm: 700 1.12rem var(--font-family-title);
 
-  --text-md: 400 1rem/1.4 var(--font-family-text);
-  --text-sm: 400 0.875rem/1.4 var(--font-family-text);
-  --text-xs: 400 0.75rem/1.4 var(--font-family-text);
+  --text-md: 400 1rem var(--font-family-text);
+  --text-sm: 400 0.875rem var(--font-family-text);
+  --text-xs: 400 0.75rem var(--font-family-text);
 
   /* Brand */
   --brand-light: #59B2FF;
@@ -51,4 +51,26 @@
   /* Text */
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--shape-background);
+
+  font: var(--text-md);
+  color: var(--text-heading);
+}
+
+h1 {
+  font: var(--text-logo);
+  color: var(--pink);
+}
+
+h2 {
+  font: var(--text-title-md);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
