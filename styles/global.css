@@ -56,7 +56,7 @@
 body {
   overflow: hidden;
   background-color: var(--shape-background);
-
+  
   font: var(--text-md);
   color: var(--text-heading);
 }
