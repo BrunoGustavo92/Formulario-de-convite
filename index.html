@@ -28,7 +28,7 @@
           <h2>Crie seu convite</h2>
         </div>
         
-        <form id="my-form">
+        <form id="form">
           <fieldset class="info">
             <legend>Sobre o evento</legend>
 
@@ -95,9 +95,23 @@
 
                 </div>
               </div>
+              
+                <div class="input-wrapper">
+                  <label for="text">Local</label>
+                  <input 
+                  type="text" 
+                  id="location"
+                  name="location">
+                </div>
+
             </div>
           
-
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description"
+              placeholder="Escreva sobre os detalhes do evento"
+              ></textarea>
+            </div>
           </fieldset>
         </form>
       </div>
