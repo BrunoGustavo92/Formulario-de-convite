@@ -38,4 +38,11 @@ main {
     align-items: center;
     padding: 5rem 8.125rem 5rem 8.125rem;
   }
+
+  & .calendar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
 }

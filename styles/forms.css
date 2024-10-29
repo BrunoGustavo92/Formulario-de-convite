@@ -13,5 +13,4 @@ fieldset {
 legend {
   font: var(--text-title-sm);
   color: var(--text-heading);
-  margin-bottom: 1.5rem;
 }

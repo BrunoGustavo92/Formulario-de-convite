@@ -1,4 +1,5 @@
 input, textarea {
+  margin-top: 12px;
   appearance: none;
   width: 100%;
   height: 3rem;
@@ -13,17 +14,14 @@ input, textarea {
   color: var(--input-placeholder);
 }
 
-textarea {
-  resize: none;
-  height: 8.5rem;
-}
-
 label {
   font: var(--text-sm);
   color: var(--text-body);
+}
 
-  display: block;
-  margin-bottom: 0.75rem;
+textarea {
+  resize: none;
+  height: 8.5rem;
 }
 
 input:focus,
