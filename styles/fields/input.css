@@ -61,4 +61,101 @@ input[type="datetime-local"] {
   & input[type="datetime-local"] {
     position: relative;
   }
-}  
+} 
+
+.theme-options2 {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  margin-top: 1.75rem;
+  gap: 1rem;
+
+  & .style {
+    display: flex;
+    flex-direction: column;
+
+    label:nth-child(1) {
+      margin-bottom: 1rem;
+    }
+
+    & .style-wrapper {
+      display: grid;
+      grid-template-columns: 4rem 1fr;
+      height: 3rem;
+      align-items: center;
+
+      & label {
+        margin-left: .75rem;
+      }
+
+      & input[type="checkbox"] {
+        appearance: none;
+        position: relative;
+        width: 4rem;
+        height: 2rem;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 1rem;
+      }
+
+      & input[type="checkbox"]::before {
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--input-stroke);
+        border-radius: .75rem;
+        top: .20rem;
+        left: .20rem;
+        transition: .4s;
+      }
+
+      & input:checked[type="checkbox"]::before {
+        background-color: var(--text-heading);
+        left: 2.2rem;
+      }
+
+      & input:checked[type="checkbox"] {
+        background-color: var(--brand-light);
+      }
+
+      & input:checked[type="checkbox"] ~ .text::before {
+        content: "Claro";
+      }
+
+      & input[type="checkbox"] ~ .text::before {
+        content: "Escuro";
+      }
+    }
+  }
+
+  & .cover-image {
+    display: flex;
+    flex-direction: column;
+
+    & .file-wrapper {
+      padding-top: .75rem;
+      margin-top: 1rem;
+
+      & .icone {
+        gap: .5rem;
+        padding: .66rem .75rem .66rem .75rem;
+        background-color: var(--shape-button);
+        border-radius: .5rem;
+        color: var(--text-heading);
+        font: var(--body-sm);
+        font-weight: 500;
+        margin-right: .75rem;
+        cursor: pointer;
+      }
+
+      & .icone svg {
+        display: inline-flex;
+        margin-right: .5rem;
+      }
+    }
+
+    & input[type="file"] {
+     display: none;
+    }
+  }
+}

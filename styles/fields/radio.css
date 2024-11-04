@@ -122,3 +122,59 @@ fieldset.custom {
   }
 }
 
+& .theme-wrapper {
+  font: var(--body-sm);
+  color: var(--text-body);
+  margin-top: 1.75rem;
+
+  & .theme-options {
+    max-width: 35rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap: .5rem;
+
+    & .theme-inner {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      width: 8.375rem;
+      background-color: var(--shape-button);
+      border-radius: .5rem;
+      border: 1px solid var(--shape-button);
+      padding: .25rem;
+
+    & img {
+      margin-bottom: .5rem;
+      width: 7.875rem;
+    }
+
+    & p {
+      margin-bottom: .25rem;
+    }
+
+    & input,
+    & input:hover,
+    & input:focus {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:focus,
+    &:active {
+      border: 1px solid var(--brand-light);
+    }
+
+    & input[type="radio"]:checked {
+      border: 1px solid var(--brand-light);
+      border-radius: .5rem;
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+    }
+  }
+}
+
