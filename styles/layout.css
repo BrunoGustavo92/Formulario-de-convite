@@ -34,12 +34,12 @@ main {
   border-radius: 12px;
 
   & .main-container {
-    max-width: 35rem;
+    max-width: 560px;
     align-items: center;
-    padding: 5rem 8.125rem 5rem 8.125rem;
+    margin: 5rem 8.125rem 5rem 8.125rem;
   }
 
-  & .calendar {
+  & .title-h2 {
     display: flex;
     align-items: center;
     gap: 0.75rem;
