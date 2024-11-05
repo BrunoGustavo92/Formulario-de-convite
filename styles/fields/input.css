@@ -14,6 +14,12 @@ input, textarea {
   color: var(--input-placeholder);
 }
 
+input {
+  &:invalid {
+    border: 0.0625rem solid var(--danger);
+  }
+}
+
 label {
   font: var(--text-sm);
   color: var(--text-body);
@@ -157,5 +163,19 @@ input[type="datetime-local"] {
     & input[type="file"] {
      display: none;
     }
+  }
+}
+
+.contact {
+  margin-top: 3rem;
+
+  & .error {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  
+    font: var(--text-xs);
+    color: var(--danger);
   }
 }

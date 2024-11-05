@@ -278,7 +278,47 @@
                   </div>
                 </div>
               </div>
+          </fieldset>
+
+          <fieldset class="contact">
+            <div class="title-h2">
+              <img src="./assets/icons/contact.svg" alt="Icone de contato">
+              <legend>Dados para contato</legend>
+            </div>
+            <div class="input-wrapper">
+              <label for="title">Nome</label>
+              <input 
+                type="text" 
+                id="name"
+                name="name" 
+                placeholder="Nome completo"
+                required>
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="Icone de alerta vermelho">
+                  <span>Campo obrigatório</span>
+                </div>
+            </div>
+
+            <div class="flex-wrapper">
+              <div class="input-wrapper">
+                <label for="mail">E-mail</label>
+                <input 
+                type="email" 
+                id="mail"
+                name="mail"
+                placeholder="exemplo@email.com">
               </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input 
+                type="text" 
+                id="phone"
+                name="phone"
+                placeholder="(99) 99999-9999">
+              </div>
+            </div>
+
           </fieldset>
         </form>
       </div>

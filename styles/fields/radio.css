@@ -128,7 +128,7 @@ fieldset.custom {
   margin-top: 1.75rem;
 
   & .theme-options {
-    max-width: 35rem;
+    width: 100%;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
