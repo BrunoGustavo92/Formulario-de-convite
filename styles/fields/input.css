@@ -1,4 +1,4 @@
-input, textarea {
+input, textarea, select {
   margin-top: 12px;
   appearance: none;
   width: 100%;
@@ -168,6 +168,7 @@ input[type="datetime-local"] {
 
 .contact {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 
   & .error {
     margin-top: 0.5rem;
